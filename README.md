@@ -1,7 +1,3 @@
-# Pokemon_Card_Generator
-
-Creating a README for your code is a great idea to help others understand and use your Pokemon Card Generator application. Here's a template for your README:
-
 # Pokemon Card Generator
 
 ## Description
