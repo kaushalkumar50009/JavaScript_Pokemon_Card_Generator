@@ -47,7 +47,7 @@ btn.addEventListener("click", function () {
 });
 
 let generateCard = (data) => {
-  console.log(data);
+  // console.log(data);
   // get necessary data and assign it to variables
 
   const hp = data.stats[0].base_stat;
@@ -91,7 +91,7 @@ let generateCard = (data) => {
         </div>
         <div class="speed">
           <h5>${statSpeed}</h5>
-          <span>Sped</span>
+          <span>Speed</span>
         </div>
       </div>
     `;
@@ -103,7 +103,7 @@ let generateCard = (data) => {
 let appendTypes = (types) => {
   // console.log(types);
   types.forEach(function (item) {
-    console.log(item);
+    // console.log(item);
     const span = document.createElement("span");
     span.textContent = item.type.name;
     document.querySelector(".power_types").appendChild(span);
@@ -111,10 +111,16 @@ let appendTypes = (types) => {
 };
 
 let styleCard = (color) => {
-  card.style.background = `radial-gradient(circle at 50% -18%, ${color} 55%, #fff 59%)`;
+  card.style.background = `radial-gradient(circle at 50% -18%, ${color} 55%, rgba(5, 165, 244, 0.15) 59%`;
   card.querySelectorAll(".power_types span").forEach((typeColor) => {
     typeColor.style.backgroundColor = color;
   });
+  card.style.border = `2px solid ${color}`;
+  let buttons = document.getElementsByTagName("button");
+  let h1 = document.getElementsByTagName("h1");
+  // console.log(buttons[0]);
+  buttons[0].style.backgroundColor = color;
+  h1[0].style.backgroundColor = color;
 };
 
 pokemonCard();

@@ -2,20 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #000000;
+  color: white;
   text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .container {
-  background-color: #010d1cc4;
-  height: 100vh;
-  width: 100vw;
+  background: url("./air-494020_1280.jpg");
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
   gap: 6.25rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
 }
 
 .card {
@@ -27,7 +31,7 @@
   gap: 3.25rem;
   width: 50%;
   height: max-content;
-  border-radius: 0.625rem;
+  border-radius: 1rem;
   /* background-color: rgba(255, 255, 255, 0.3); */
   backdrop-filter: blur(6px);
   /* background: radial-gradient(circle at 50% -18%, orange 55%, #fff 59%); */
@@ -35,7 +39,6 @@
 
 .hp {
   align-self: flex-end;
-  background: #fff;
   border-radius: 8px;
   padding: 10px;
 }
@@ -71,13 +74,13 @@ img {
   text-align: center;
 }
 
-button {
-  color: #fff;
+button,
+h1 {
   padding: 10px 20px;
   outline: transparent;
   border-radius: 10px;
-  background-color: #1242d0bd;
+  /* background-color: #1242d0bd; */
   border: transparent;
-  font-size: 15px;
+  font-size: 1rem;
   cursor: pointer;
 }
